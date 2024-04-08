@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Body*/
+body{
+    font-family: 'Seven segment';
+}
+/*Calcolatrice*/
+.container-calc{
+    width: 300px;
+    margin: 100px auto 30px;
+    background-image: linear-gradient(/*to bottom right*/270deg, #eeee 0%, #cdcdcd 100%);
+    border-radius: 20px;
+}
+/*Header*/
+header{
+    text-align: center;
+}
+/*Display*/
+.display{
+    background-color: black;
+    font-family: 'Seven segment', sans-serif;
+    color: #09D297;
+    font-size: 32px;
+    text-align: right;
+    padding: 12px 5px;
+}
+
+/*Contenitore dei bottoni*/
+.buttons{
+    display: flex;
+    padding: 15px;
+}
+
+/*Tastierino Numerico*/
+.numbers{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numbers button{
+    width: calc(100% / 3 - 10px); /*Do un larghezza ai bottoni lasciando un po' di spazio, con quei 10xp tolti ho spazio per un margine così da non avere l'effetto schiacciato ; lo spazio comunque lo gestiscono i Button nel tastierino Numerico*/
+    margin-right: 10px;
+}
+
+.zero{
+    flex-grow: 1;
+}
+
+/*Tastierino Operatori*/
+.operations{
+    width: calc(100% / 4 - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.operations button{
+    width: 100%;
+}
+
+/*Formatto i bottoni*/
+button{
+    background-color: #8888;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-top: 1px solid #eeee;
+    border-right: 1px solid #eeee;
+    border-bottom: 2px solid #898989;
+    border-left: 2px solid #898989;
+    border-radius: 5px;
+}
+/*Applico effetto hover, invertendo i bordi*/
+button:hover{
+    border-bottom: 1px solid #eeee;
+    border-left: 1px solid #eeee;
+    border-top: 2px solid #898989;
+    border-right: 2px solid #898989;
+}
+
+/*Colori*/
+
+.orange {
+    background-color: orange;
+}
+
+.lightblue {
+    background-color: cadetblue;
+}
+
+.orange , 
+.lightblue {
+    color: white;
+}
