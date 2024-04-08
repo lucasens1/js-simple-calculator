@@ -14,8 +14,10 @@ pulsante canc: cliccando il pulsante si resetta il calcolo */
 //Milestone 1 :
 //Seleziono l'array contenente i numeri, ne ottengo la lunghezza lo passo all'interno della funzione
 const displayCalculator = document.getElementById('dis_op');
+console.log(displayCalculator)
 
 let numbers = document.querySelectorAll(".num");
+console.log(numbers);
 let len = numbers.length;
 addEvNum(numbers, len);
 
@@ -23,8 +25,10 @@ addEvNum(numbers, len);
 
 //Milestone 2 :
 let operators = document.querySelectorAll(".op");
-let lun = operators.length
+let lun = operators.length;
 addEvOp(operators, lun);
+
+console.log(operators);
 
 //Milestone 3 :
 let equal = document.getElementById('result');

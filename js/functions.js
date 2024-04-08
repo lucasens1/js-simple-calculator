@@ -5,8 +5,10 @@
  */
 function addEvNum(arr, lun){
     for(let i = 0; i < lun; i++){
-        arr[i].addEventListener("click", writeOnDisplay);
-        console.log(arr[i]);
+        arr[i].addEventListener("click", function(){
+            const btnVal = this.innerHTML;
+            writeOnDisplay(btnVal);
+        });
     } 
 }
 
@@ -14,9 +16,9 @@ function addEvNum(arr, lun){
 /**
  * Funzione che aggiunge i numeri sullo schermo della Calcolatrice, prende in entrata nulla, quindi funzione void, si serve dell'elemento span con id = 'op' e scrive al suo interno i numeri presi dalla calcolatrice servendosi di this.
  */
-function writeOnDisplay (){
+function writeOnDisplay (numVal){
     let displayCalc = document.getElementById('dis_op');
-    let numInside = this.innerHTML;
+    let numInside = numVal; //this questo (num) scritto
     if(displayCalc.innerHTML === '0'){
         displayCalc.innerHTML = numInside;
     } else {
@@ -25,7 +27,7 @@ function writeOnDisplay (){
     let operando1 = displayCalc.innerHTML;
     console.log(operando1);
     return operando1; //non restituisce niente ... 
-}
+} 
 
 /**
  * Funzione che con array di operatori permette di aggiungere l'evento a tutti
@@ -34,19 +36,22 @@ function writeOnDisplay (){
  */
 function addEvOp(arr, lun){
     for(let i = 0; i < lun; i++){
-        arr[i].addEventListener("click", operationPoints);
-    } return opSel; // niente ... 
+        arr[i].addEventListener("click", function (){
+            const val = this.innerHTML;
+            operationPoints(val);
+        });
+    }
 }
 
 /**
  * funzione che restituisce operatore
  * @returns {string}
  */
-function operationPoints(){
+function operationPoints(val){
     let onDisplay = document.getElementById('dis_op');
-    let opSelected = this.innerHTML;
+    let opSelected = val;
     console.log(opSelected);
-    let opSel = "";
+    let opSel = '';
     if(opSelected === '+') {
         opSel = '+';
         onDisplay.innerHTML = "0";
