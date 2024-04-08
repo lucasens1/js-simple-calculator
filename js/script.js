@@ -11,3 +11,10 @@ quando si clicca su =, salvare il secondo operando, effetuare il calcolo corrett
 MILESTONE 4
 pulsante canc: cliccando il pulsante si resetta il calcolo */
 
+//Milestone 1 :
+let numbers = document.querySelectorAll(".num");
+console.log(numbers);
+let len = numbers.length;
+console.log(len);
+
+addEv(numbers, len);
