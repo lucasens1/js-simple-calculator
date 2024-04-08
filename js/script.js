@@ -17,4 +17,15 @@ console.log(numbers);
 let len = numbers.length;
 console.log(len);
 
-addEv(numbers, len);
+let displayStart = document.getElementById('dis_op');
+console.log(displayStart);
+
+displayStart.innerHTML = '0';
+
+addEvNum(numbers, len);
+
+//Milestone 2 :
+let operators = document.querySelectorAll(".op");
+console.log(operators);
+let lun = operators.length
+addEvOp(operators, lun);
