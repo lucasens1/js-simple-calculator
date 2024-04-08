@@ -18,7 +18,7 @@ function addEvNum(arr, lun){
  */
 function writeOnDisplay (numVal){
     let displayCalc = document.getElementById('dis_op');
-    let numInside = numVal; //this questo (num) scritto
+    let numInside = numVal; // (num) scritto
     if(displayCalc.innerHTML === '0'){
         displayCalc.innerHTML = numInside;
     } else {

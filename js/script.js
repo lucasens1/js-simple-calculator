@@ -28,8 +28,6 @@ let operators = document.querySelectorAll(".op");
 let lun = operators.length;
 addEvOp(operators, lun);
 
-console.log(operators);
-
 //Milestone 3 :
 let equal = document.getElementById('result');
 addResult(equal);
