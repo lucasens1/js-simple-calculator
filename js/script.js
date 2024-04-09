@@ -166,12 +166,22 @@ function result(){
             cont = 0;
             break;
         case '/' :
-            res = parseInt(firstOperando) / parseInt(secondOperando);
-            valOnDisplay.innerHTML = res;
-            firstOperando = '';
-            secondOperando = '';
-            cont = 0;
-            break;
+            //BONUS
+            if(parseInt(secondOperando) !== 0){
+                res = parseInt(firstOperando) / parseInt(secondOperando);
+                valOnDisplay.innerHTML = res;
+                firstOperando = '';
+                secondOperando = '';
+                cont = 0;
+                break;}
+            else{
+                valOnDisplay.innerHTML = "IMPOSSIBILE";
+                firstOperando = '';
+                secondOperando = '';
+                cont = 0;
+                break;
+            }
+            
     }   
     console.log('Il risultato è :', res)
 }

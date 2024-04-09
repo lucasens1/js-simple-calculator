@@ -50,3 +50,8 @@ pulsante canc: cliccando il pulsante si resetta il calcolo
     - In questo caso prendo il bottone singolo del canc, aggiungo l'EventListener() al click farà partire la funzione *<b>clearDisplay()</b>* :
         - Rinizializza tutte le variabili
         - Riporta il display al valore '0'
+
+- <i> Bonus </i> :
+    - Verifica che non si divide per 0
+    - nella *terza milestone* applico il controllo all'operatore '/'
+    - restituisco IMPOSSIBILE sul display della Calcolatrice
