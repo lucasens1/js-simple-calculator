@@ -177,7 +177,7 @@ function result(){
 }
 //---------- /MILESTONE 3
 
-//BONUS
+//--------- MILESTONE 4
 function clickCanc(){
     cancBtn.addEventListener("click", clearDisplay)
 }
@@ -190,3 +190,5 @@ function clearDisplay(){
     cont = 0
     operator = ''
 }
+
+//--------- /MILESTONE 4
