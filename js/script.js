@@ -95,7 +95,7 @@ function insertInDisplay(val){
         }else{
             valOnDisplay.innerHTML += val;
             firstOperando += val;
-            console.log('Questo è il valore del primo Operando (if) : ',firstOperando)
+            console.log('Questo è il valore del primo Operando (else onDisplay != 0) : ',firstOperando)
         } 
     } else if(cont === 2){
         if(valOnDisplay.innerHTML === '0'){
@@ -105,7 +105,7 @@ function insertInDisplay(val){
         }else{
             valOnDisplay.innerHTML += val;
             secondOperando += val;
-            console.log('Questo è il valore del secondo Operando (if) : ',secondOperando)
+            console.log('Questo è il valore del secondo Operando (else onDisplay != 0 ) : ',secondOperando)
         }
     }  
 }
